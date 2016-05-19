@@ -1,0 +1,22 @@
+$icon-font-path: '../fonts/';
+
+@import "../components/css/bootstrap";
+
+body{
+  background-color: #202f29;
+  color: #ececec;
+  font-family: Roboto, "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+
+
+@import "partials/navbar";
+@import "partials/portfolio-grid";
