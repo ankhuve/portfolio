@@ -11,7 +11,8 @@
     "url": "https://github.com/ankhuve/portfolio"
   },
   "keywords": [
-    "portfolio"
+    "portfolio",
+    "design"
   ],
   "author": "Erik Forsberg",
   "license": "ISC",
@@ -25,5 +26,11 @@
     "gulp-concat": "^2.6.0",
     "gulp-sass": "^2.3.1",
     "jquery": "^2.2.3",
+    "vue": "^1.0.24"
+  },
+  "dependencies": {
+    "firebase": "^3.0.1",
+    "vue": "^1.0.24",
+    "vuefire": "^1.0.1"
   }
 }
