@@ -1,6 +1,7 @@
 $icon-font-path: '../fonts/';
 
 @import "../components/css/bootstrap";
+@import "../components/css/font-awesome";
 
 body{
   background-color: #202f29;
@@ -15,8 +16,9 @@ body{
   padding: 0.2em 0;
 }
 
-//@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
 
 
 @import "partials/navbar";
+@import "partials/footer";
 @import "partials/portfolio-grid";
