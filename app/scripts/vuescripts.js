@@ -9,17 +9,12 @@ var HomeComponent = Vue.extend({
         }
     },
     methods: {
-        setActiveProject: function () {
-            this.enlargeTile();
-            //this.active = true;
-            //console.log('dispatched ' + this.active);
-            //
-            //this.$dispatch('dispatch-test', this.active);
-            //this.activeProject = true;
-
+        setActiveProject: function (event) {
+            this.toggleActiveTile(event.currentTarget.id);
         },
-        enlargeTile: function(elm){
-            console.log(this.$event);
+
+        toggleActiveTile: function(id){
+            $('#' + id).toggleClass('active-tile');
         }
     }
 });
