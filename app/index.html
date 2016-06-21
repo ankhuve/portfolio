@@ -24,7 +24,7 @@
     <div class="container">
         <div class="row">
             <ul class="nav nav-pills pull-right">
-                <li class="active"><a v-link="{ path: '/' }">Home</a></li>
+                <!--<li class="active"><a v-link="{ path: '/' }">Home</a></li>-->
                 <li><a v-link="{ path: '/about' }">About</a></li>
                 <li><a v-link="{ path: '/contact' }">Contact</a></li>
                 <!--<button class="btn btn-primary" id="login-button">Login</button>-->
@@ -46,15 +46,6 @@
 
 <template id="home">
     <div class="row">
-        <div class="col-md-4 project-tile earth" id="earth-2" v-show="!active" @click="setActiveProject($event)">
-            <div class="hoverlay">
-                <h1>cool project</h1>
-                <div class="borderBottom"></div>
-                <p>
-                    this is text that shows up when you hover over the tile
-                </p>
-            </div>
-        </div>
         <div class="col-md-8 tile-container about-tile">
             <div class="description">
                 <h1>Hi, I'm Erik</h1>
@@ -65,9 +56,7 @@
 
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 project-tile" id="villafiber" v-show="!activeProject" @click="setActiveProject">
+        <div class="col-md-4 project-tile earth" id="earth-2" v-show="!active" @click="setActiveProject($event)">
             <div class="hoverlay">
                 <h1>cool project</h1>
                 <div class="borderBottom"></div>
@@ -76,7 +65,19 @@
                 </p>
             </div>
         </div>
+
+    </div>
+    <div class="row">
         <div class="col-md-4 project-tile earth" id="earth-1" v-show="!activeProject" v-on:click="setActiveProject">
+            <div class="hoverlay">
+                <h1>cool project</h1>
+                <div class="borderBottom"></div>
+                <p>
+                    this is text that shows up when you hover over the tile
+                </p>
+            </div>
+        </div>
+        <div class="col-md-8 project-tile" id="villafiber" v-show="!activeProject" @click="setActiveProject">
             <div class="hoverlay">
                 <h1>cool project</h1>
                 <div class="borderBottom"></div>

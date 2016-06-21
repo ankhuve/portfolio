@@ -99,9 +99,9 @@ var vm = new Vue({
             firebase.database().ref('/projects/').limitToLast(25).once('value').then(function(snapshot) {
                 var dataObj = snapshot.val();
 
-                for (var prop in dataObj) {
-                    if (dataObj.hasOwnProperty(prop)) {
-                        console.log(dataObj[prop].title);
+                for (var proj in dataObj) {
+                    if (dataObj.hasOwnProperty(proj)) {
+                        console.log(dataObj[proj]);
                     }
                 }
 
